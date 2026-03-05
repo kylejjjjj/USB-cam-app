@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">USB Webcam Viewer</string>
+    <string name="permission_denied">USB permission denied for camera</string>
+    <string name="camera_opened">Camera connected</string>
+    <string name="camera_closed">Camera disconnected</string>
+    <string name="no_cameras">No USB cameras detected. Connect a webcam via USB OTG.</string>
+    <string name="scanning">Scanning for cameras…</string>
+    <string name="grant_permission">Grant Permission</string>
+</resources>

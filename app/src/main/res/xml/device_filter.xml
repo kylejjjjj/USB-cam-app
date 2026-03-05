@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    UVC (USB Video Class) devices typically use:
+    - Class: 0x0E (Video)
+    - Subclass: 0x01 (Video Control) or 0x02 (Video Streaming)
+    
+    This filter catches all UVC-compatible webcams.
+    An empty usb-device tag matches all USB devices (broadest filter).
+-->
+<resources>
+    <!-- Match all USB Video Class devices (webcams) -->
+    <usb-device class="0x0E" subclass="0x01" />
+    <usb-device class="0x0E" subclass="0x02" />
+    <!-- Also match composite devices that contain UVC interfaces -->
+    <usb-device class="0xEF" />
+    <!-- Fallback: match all USB devices so user can select -->
+    <usb-device />
+</resources>
